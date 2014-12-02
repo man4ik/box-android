@@ -10,3 +10,12 @@ vim
 python-apt
 python-dev
 firefox
+ruby
+ruby1.9.1					
+ruby1.9.1-dev					
+ruby1.9.1-examples				
+ruby1.9.1-full					
+ruby1.9.3
+mongo
+nodejs
+perl
