@@ -33,6 +33,8 @@ default-build:
               name: show base information
               code: |
                 gradle -v
+                echo $JAVA_HOME
+                echo $JAVA8_HOME
                 echo $ANDROID_HOME
                 echo $ANDROID_SDK_VERSION
                 echo $ANDROID_BUILD_TOOLS
