@@ -1,4 +1,5 @@
 erlang
+firefox-locale-en
 memcached
 libmemcached6
 libmysqlclient18
@@ -18,3 +19,17 @@ ruby1.9.1-full
 ruby1.9.3
 nodejs
 perl
+man-db
+gir1
+glassfish-javaee	
+hicolor-icon-theme
+less
+mongodb-clients	
+perl-base
+python
+python-dbus	
+python-dbus-dev		
+python-gi			
+python-minimal			
+python2.7	
+python2.7-minimal
