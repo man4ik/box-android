@@ -17,18 +17,12 @@ type android || { echo "Path: $PATH"; echo 'Android not availble after installat
 export ANDROID_BUILD_TOOLS="21.1.1"
 export ANDROID_VERSION="5.0"
 source $WERCKER_SOURCE_DIR/install-build-tools.sh
-export ANDROID_BUILD_TOOLS="20"
-export ANDROID_VERSION="4.4W"
-source $WERCKER_SOURCE_DIR/install-build-tools.sh
-export ANDROID_BUILD_TOOLS="19.1"
-export ANDROID_VERSION="4.4.2"
-source $WERCKER_SOURCE_DIR/install-build-tools.sh
 
 # export ANDROID_BUILD_TOOLS="17"
 # export ANDROID_VERSION="4.2.2"
 # source $WERCKER_SOURCE_DIR/install-build-tools.sh
 
-export ANDROID_BUILD_TOOLS="19.1,20,21.1.1"
+export ANDROID_BUILD_TOOLS="21.1.1"
 
 
 # Write environment variables setup to $profile
