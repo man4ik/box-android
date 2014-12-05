@@ -1,5 +1,5 @@
 name: android
-version: 1.0.14
+version: 1.0.15
 inherits: pjvds/java@0.1.3
 type: main
 platform: ubuntu@12.04
@@ -49,6 +49,8 @@ default-build:
               name: run gradle
               code: |
                 gradle --full-stacktrace -q --project-cache-dir=$WERCKER_CACHE_DIR build
+          - setup-android-emulator:
+                target: 1
 script: |
   profile="/etc/environment"
   
