@@ -23,8 +23,7 @@ man-db
 glassfish-javaee	
 hicolor-icon-theme
 less
-mongodb-clients	
-perl-base
+mongodb-clients
 python
 python-dbus	
 python-dbus-dev		
