@@ -18,14 +18,8 @@ ruby1.9.1-examples
 ruby1.9.1-full					
 ruby1.9.3
 nodejs
-perl
 man-db
 glassfish-javaee	
 hicolor-icon-theme
-less
 mongodb-clients
-python
-python-dbus	
-python-dbus-dev		
-python-gi			
-python-minimal		
+
