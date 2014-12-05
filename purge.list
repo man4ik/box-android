@@ -28,6 +28,4 @@ python
 python-dbus	
 python-dbus-dev		
 python-gi			
-python-minimal			
-python2.7	
-python2.7-minimal
+python-minimal		
