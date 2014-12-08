@@ -1,52 +1,27 @@
 # Android box
 
 The `wercker/android` box runs on ubuntu 12.04 and provides a selection of the Android toolchain:
-
-* gradle 2.1
-* android sdk version 23.0.5
-* android build tools 18.0.1, 19.0.3, 19.1 and 21
-* android API 18 (android 4.3) and 19 (android 4.4) and 21
-* sys image 19 (emulators)
+What inside?
+* gradle 2.2.1
+* android sdk version 23.0.3 //0.5 not found
+* android build tools 21
+* android API  21
+* sys image 21 (emulators)
 * android support library
 * google play service repository
 
 The box also inherits tools from a not yet official java box, resulting in the following additional tools:
 
 * oracle java 7
+* oracle java 8
 * ant and ivy
 * maven
-
-A typical android application can use the following yaml:
-
-``` yaml
-box: wercker/android
-# Build definition
-build:
-  # The steps that will be executed on build
-  steps:
-    - script:
-        name: show base information
-        code: |
-          gradle -v
-          echo $ANDROID_HOME
-          echo $ANDROID_BUILD_TOOLS
-          echo $ANDROID_UPDATE_FILTER
-    # A step that executes `gradle build` command
-    - script:
-        name: run gradle
-        code: |
-          gradle --full-stacktrace -q --project-cache-dir=$WERCKER_CACHE_DIR build
-```
 
 There are a number of environment varaibles declared for your information:
 
 * ANDROID_SDK_VERSION : version of the sdk
 * ANDROID_BUILD_TOOLS : which versions of the build tools are installed.
 * ANDROID_UPDATE_FILTER : shows all sdk elements which are installed
-
-# What's new
-
-* update sdk version and upgraded gradle version
 
 # Guides
 
@@ -61,71 +36,3 @@ There are a number of environment varaibles declared for your information:
 The MIT License (MIT)
 
 Copyright (c) 2013 wercker
-
-# Changelog
-
-## 1.0.7
-
-* upgraded android sdk version to 23.0.5
-
-## 1.0.6
-
-* updated gradle to 2.1
-
-## 1.0.5
-
-* google play service repository added
-
-## 1.0.4
-
-* updated gradle to 1.12
-* updated Android SDK to 23
-
-## 1.0.3
-
-* add android buildtools 19.1.0
-
-## 1.0.2
-
-* updated gradle to 1.11
-
-## 1.0.1
-
-* android buildtools 19.0.1 updated to 19.0.3
-
-## 1.0.0
-
-* updated gradle to 1.9
-* android tools 19 updated to 19.0.1 (Android 4.4.2)
-* dropped: android build tools 17, 18 and android 17 api, system image for
-level 18 (reason: box size)
-
-## 0.0.19
-
-* sys image 18
-
-## 0.0.18
-
-* sys image 19
-
-## 0.0.17
-
-* android sdk version bumped to 22.2.1
-* build tools release 19 added (Android 4.4)
-
-## 0.0.16
-
-* switched to gradle 1.8
-
-## 0.0.15
-
-* $ added for environment variables in the default wercker.yml
-
-## 0.0.14
-
-* expanded readme.
-* ANDROID_SDK_VERSION environment variable added
-
-## 0.0.13
-
-* initial release
