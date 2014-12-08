@@ -84,7 +84,7 @@ script: |
   source $WERCKER_SOURCE_DIR/install-sdk.sh
   source $WERCKER_SOURCE_DIR/update-sdk.sh
 
-  export GRADLE_VERSION=2.1
+  export GRADLE_VERSION=2.2.1
   # install graddle
   source $WERCKER_SOURCE_DIR/install-gradle.sh
 
