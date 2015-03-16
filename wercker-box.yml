@@ -1,5 +1,5 @@
 name: android
-version: 1.0.18
+version: 1.0.19
 inherits: pjvds/java@0.1.3
 type: main
 platform: ubuntu@12.04
