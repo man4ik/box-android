@@ -1,4 +1,4 @@
 box: wercker/default
 build:
   steps:
-    - validate-wercker-box@0.0.12
+    - validate-wercker-box@0.0.11
